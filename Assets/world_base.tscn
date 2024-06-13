@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dxodi574f3peq"]
+
+[ext_resource type="PackedScene" uid="uid://blsuip3mvcp04" path="res://Assets/Objects/level_info.tscn" id="3_o6duq"]
+[ext_resource type="PackedScene" uid="uid://be0ne7mthmt6d" path="res://Assets/Entities/player.tscn" id="4_q0y4e"]
+
+[node name="WorldBase" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+
+[node name="Map" type="Node3D" parent="."]
+
+[node name="Triggers" type="Node3D" parent="."]
+
+[node name="Sounds" type="Node3D" parent="."]
+
+[node name="LevelInfo" parent="." instance=ExtResource("3_o6duq")]
+
+[node name="Player" parent="." instance=ExtResource("4_q0y4e")]
